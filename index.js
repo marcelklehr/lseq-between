@@ -1,4 +1,5 @@
-var b58 = require('base58')
+//disable b58 because it's not lexiographicly sorted!
+//var b58 = require('base58')
 var base = 36
 
 function encode(n) {
@@ -49,8 +50,5 @@ module.exports.array = {parse: arrayParse, stringify: arrayStringify}
 
 module.exports.lo = arrayStringify([0])
 module.exports.hi = arrayStringify([Number.MAX_SAFE_INTEGER])
-
-
-
 
 
