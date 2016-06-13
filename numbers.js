@@ -14,7 +14,7 @@ module.exports = function (lo, hi) {
   for(i=0; i<lo.length && i<hi.length; i++) {
     if (lo[i] != hi[i]) break;
     mid.push(lo[i])
-    base *= 2 // double base for every level in identifier tree
+    base = Math.min(base*2,Number.MAX_SAFE_INTEGER) // double base for every level in identifier tree
   }
 
   var _lo = lo[i], _hi = hi[i]
@@ -27,7 +27,7 @@ module.exports = function (lo, hi) {
     // or
     // _lo and _hi are adjacent or equal -> new level in tree
     mid.push(_lo)
-    base *= 2
+    base = Math.min(base*2,Number.MAX_SAFE_INTEGER)
     i++
     _lo = lo[i] || 0
     _hi = 'undefined' !== typeof hi[i]? hi[i] : base
