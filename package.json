@@ -1,11 +1,11 @@
 {
-  "name": "lexiographic-between",
+  "name": "lseq-between",
   "description": "",
   "version": "0.0.0",
-  "homepage": "https://github.com/dominictarr/lexiographic-between",
+  "homepage": "https://github.com/marcelklehr/lseq-between",
   "repository": {
     "type": "git",
-    "url": "git://github.com/dominictarr/lexiographic-between.git"
+    "url": "git://github.com/marcelklehr/lseq-between.git"
   },
   "dependencies": {
   },
@@ -15,7 +15,7 @@
   "scripts": {
     "test": "set -e; for t in test/*.js; do node $t; done"
   },
-  "author": "Dominic Tarr <dominic.tarr@gmail.com> (http://dominictarr.com)",
+  "author": "Marcel Klehr <mklehr@gmx.net>",
   "license": "MIT"
 }
 
